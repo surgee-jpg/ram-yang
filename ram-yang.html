@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>람양식 – 따뜻한 감성 파스타 전문점</title>
+
+    <style>
+        :root {
+            --bg: #f7f1e9;
+            --card: #ffffff;
+            --primary: #c87f5b;
+            --text: #4a3f35;
+            --accent: #e8c7a1;
+            --radius: 18px;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            font-family: "Pretendard", sans-serif;
+            color: var(--text);
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            background: #ffffffaa;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 2px 6px #00000010;
+        }
+
+        .hero {
+            height: 40vh;
+            background: #d8c5ae;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--text);
+        }
+
+        section {
+            padding: 40px 24px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 14px;
+            color: var(--primary);
+        }
+
+        .menu-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .menu-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: 0 4px 10px #00000010;
+            text-align: center;
+        }
+
+        .topping-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .topping {
+            background: var(--accent);
+            padding: 10px 16px;
+            border-radius: var(--radius);
+            font-size: 14px;
+        }
+
+        .cta {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .cta a {
+            background: var(--primary);
+            color: white;
+            padding: 14px 24px;
+            text-decoration: none;
+            border-radius: var(--radius);
+            font-weight: 600;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            color: #8d7a6d;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    람양식
+</header>
+
+<div class="hero">
+    따뜻한 감성 파스타 전문점
+</div>
+
+<section>
+    <h2>대표 메뉴</h2>
+    <div class="menu-grid">
+
+        <div class="card">
+            <h3>까르보나라</h3>
+            <p>부드럽고 고소한 정통 까르보나라.</p>
+            <strong>₩14,000</strong>
+        </div>
+
+        <div class="card">
+            <h3>토마토 파스타</h3>
+            <p>진하고 상큼한 클래식 토마토 파스타.</p>
+            <strong>₩13,000</strong>
+        </div>
+
+        <div class="card">
+            <h3>알리오 올리오</h3>
+            <p>올리브오일과 마늘의 깊은 풍미.</p>
+            <strong>₩12,000</strong>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>추가 토핑</h2>
+    <div class="topping-list">
+        <div class="topping">아보카도</div>
+        <div class="topping">피스타치오</div>
+        <div class="topping">햄</div>
+        <div class="topping">아스파라거스</div>
+    </div>
+</section>
+
+<section>
+    <h2>가게 소개</h2>
+    <p>
+        람양식은 따뜻하고 감성적인 분위기의 파스타 전문점입니다.<br>
+        데이트, 소모임, 혼밥까지 편안하게 즐길 수 있는 공간입니다.
+    </p>
+</section>
+
+<section>
+    <h2>위치 안내</h2>
+    <div style="
+        width:100%;
+        height:250px;
+        background:#d9d9d9;
+        border-radius:18px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:#555;">
+        지도 Placeholder
+    </div>
+</section>
+
+<section class="cta">
+    <a href="">예약하기</a>
+</section>
+
+<footer>
+    © 람양식 – All Rights Reserved.
+</footer>
+
+</body>
+</html>
+
